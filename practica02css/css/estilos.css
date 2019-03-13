@@ -32,6 +32,13 @@ header nav ul li
 	/*text-decoration: underline;*/
 }
 
+footer
+{
+	border-top: 2px solid lightgray;
+	background: #2e65b6;
+	color: white;
+}
+
 #bgoffer
 {
 	left: -35px;
@@ -86,10 +93,48 @@ header nav ul li
 	color: #FF0099
 }
 
+#secc03art4
+{
+	padding-top: 40px;
+}
+
 #segundaSeccion article
 {
 	padding-right: 122px;
 	text-align: right;
+}
+
+#terceraSeccion article
+{
+	display: inline-block;
+	vertical-align: top; /*alinear hacia arriba de la caja*/
+	width: 23%;
+}
+
+#terceraSeccion article img
+{
+	vertical-align: middle; /*colocar el texto a la mitad de la imagen*/
+}
+
+#terceraSeccion article input
+{
+	border-radius: 5px;
+}
+
+#terceraSeccion article input[type="button"]
+{
+	background: #8BC500;
+	color: white;
+}
+
+.colorazul
+{
+	color: #4267B3;
+}
+
+.colorverde
+{
+	color: #8BC500;
 }
 
 .colorrosa
