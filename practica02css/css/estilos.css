@@ -34,10 +34,28 @@ header nav ul li
 
 footer
 {
-	border-top: 2px solid lightgray;
 	background: #2e65b6;
 	color: white;
+	font-size: 0.8em;
+	margin-top: 25px;
+	padding-top: 50px;
 }
+
+footer article
+{
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+footer input
+{
+	background: #2e65b6;
+	border: 1px solid white;
+	border-radius: 10px;
+	color: white;
+	float: right;
+}
+
 
 #bgoffer
 {
@@ -125,6 +143,46 @@ footer
 {
 	background: #8BC500;
 	color: white;
+}
+
+#footart01
+{
+	width: 35%;
+}
+
+#footart02
+{
+	text-align: center;
+	width: 35%;
+}
+
+#footart03
+{
+	width: 26%;
+}
+
+#facebook
+{
+	float: right;
+	position: relative;
+	top: -120px;
+	right: 170px
+}
+
+#twitter
+{
+	float: right;
+	position: relative;
+	top: -120px;
+	right: 70px;
+}
+
+#monitos
+{
+	float: right;
+	position: relative;
+	top: -160px;
+	left: 60px;
 }
 
 .colorazul
