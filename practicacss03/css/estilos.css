@@ -32,8 +32,8 @@ header input
 
 #primerSeccion article
 {
-	border: red 1px;
 	display: inline-block;
+	margin: -2px;
 	margin-top: 15px;
 	margin-bottom: 30px;
 	vertical-align: top;
@@ -41,12 +41,13 @@ header input
 
 #logo
 {
+	margin-left: 20px;
 	width: 200px;
 }
 
 #secc01art01
 {
-	width: 29.5%;
+	width: 29.9%;
 }
 
 #secc01art01 ul
@@ -83,13 +84,54 @@ header input
 	padding-top: 10px;
 }
 
+#segundaSeccion
+{
+	border-top: 1px solid gray;
+	padding-top: 20px;
+}
+
 #segundaSeccion article
+{
+	border-bottom: 1px dashed gray;
+	display: inline-block;
+	margin-left: 30px;
+	padding-left: 105px;
+	vertical-align: top;
+}
+
+#segundaSeccion img
+{
+	width: 200px;
+}
+
+#terceraSeccion
+{
+	padding-top: 10px;
+}
+
+#terceraSeccion article
 {
 	display: inline-block;
 	vertical-align: top;
-	width: 32.6%;
 }
 
+#secc03art01
+{
+	margin-left: 110px;
+	width: 30%;
+}
+
+#secc03art02
+{
+	margin-left: 55px;
+	width: 15%;
+}
+
+#secc03art03
+{
+	margin-left: 160px;
+	width: 20%;
+}
 
 .colorazul
 {
@@ -106,15 +148,9 @@ header input
 	color: #858585;
 }
 
-.guion
+.colorgrisbajo
 {
-	padding-left: 40px;
-}
-
-.img
-{
-	margin-left: 130px;
-	width: 200px;
+	color: #4f4f4f;
 }
 
 .letrachica
@@ -135,5 +171,4 @@ header input
 .tamano
 {
 	width: 17.1%;
-	margin: -2px;
 }
