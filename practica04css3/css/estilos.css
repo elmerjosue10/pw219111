@@ -1,0 +1,159 @@
+body
+{
+	font-size: 16px;
+	margin: 0px auto;
+	max-width: 1024px;
+}
+
+header
+{
+	border-bottom: 1px dashed gray;
+}
+
+header ul
+{
+	list-style: none;
+	margin-bottom: 30px;
+}
+
+header nav ul li
+{
+	display: inline-block;
+	font-weight: bold;
+	margin-right: 25px;
+}
+
+footer
+{
+	margin-bottom: 30px;
+}
+
+footer article
+{
+	display: inline-block;
+	margin: -10px;
+	margin-top: 30px;
+	margin-left: 40px;
+	vertical-align: top;
+	width: 15%;
+}
+
+#buy
+{
+	position: relative;
+	top: 50px;
+	right: -300px;
+	width: 40px;
+}
+
+#bike
+{
+	width: 350px;
+}
+
+#firstBike
+{
+	margin-left: 40px;
+	margin-bottom: 10px;
+	width: 150px;
+}
+
+#news
+{
+	width: 22%;
+}
+
+#primerSeccion article
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#secc01art01
+{
+	width: 60%;
+}
+
+#secc01art02
+{
+	padding-top: -40px;
+	width: 38%;
+}
+
+#secc01art01art01
+{
+	border-bottom: 1px dashed gray;
+	margin-left: 40px;
+}
+
+#secc01art01art02
+{
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+#segundaSeccion article
+{
+	margin-left: 40px;
+}
+
+#segundaSeccion article img
+{
+	vertical-align: middle;
+}
+
+#shop
+{
+	position: relative;
+	right: -450px;
+	top: 15px;
+	width: 100px;
+}
+
+#year
+{
+	position: relative;
+	top: -60px;
+	right: 10px;
+}
+
+.colorgris
+{
+	color: #808080;
+}
+
+.colorgrisbajo
+{
+	color: #919191;
+}
+
+.colorverde
+{
+	color: #73f33d;
+}
+
+.imgheader
+{
+	right: -620px;
+	position: relative;
+	vertical-align: top;
+	width: 20px;
+}
+
+.letragrande
+{
+	font-size: 4.2em;
+}
+
+.nito
+{
+	font-weight: bold;
+}
+
+.video
+{
+	margin-right: 20px;
+	position: relative;
+	top: 20px;
+	width: 260px;
+}
