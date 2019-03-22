@@ -1,0 +1,148 @@
+@font-face
+{
+	font-family: Roboto, Anton;
+	src:url("Roboto/Roboto-Black.ttf")
+	src:url("Anton/Anton-Regular.ttf");
+}
+
+body
+{
+	/*border: 1px solid black;*/
+	font-size: 16px;
+	margin: 0px auto;
+}
+
+header
+{
+	margin-bottom: 20px;
+	margin-top: 20px;s
+}
+
+header img
+{
+	vertical-align: middle;
+}
+
+section
+{
+	border-top: 3px solid black;
+}
+
+section article
+{
+	/*border: 1px solid black;*/
+	display: inline-block;
+	vertical-align: top;
+}
+
+#art01
+{
+	margin-top: 30px;
+	margin-right: 80px;
+	width: 60%;
+}
+
+#art01art01 img
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+#art01art02
+{
+	margin-left: 110px;
+	margin-top: 30px;
+}
+
+#art01art03
+{
+	margin-left: 190px;
+	margin-top: 40px;
+}
+
+#art02art01
+{
+	margin-left: 50px;
+}
+
+#art02
+{
+	border-left: 2px solid black;
+	margin-top: 70px;
+	width: 20%;
+}
+
+#art02art02
+{
+	margin-left: 50px;
+}
+
+#ind
+{
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+}
+
+#lupa
+{
+	margin-right: 700px;
+	width: 30px;
+}
+
+#menu
+{
+	margin-right: 20px;
+}
+
+#north
+{
+	font-family: 'Anton', sans-serif;
+	margin-right: 850px;
+}
+
+#persona
+{
+	width: 400px;
+}
+
+#planta
+{
+	margin-left: -25px;
+	width: 1100px;
+}
+
+#tela
+{	
+	width: 400px;
+}
+
+#striped
+{
+	font-family: 'Robotos', sans-serif;
+
+}
+
+.colorgris
+{
+	color: #bbbbbb;
+}
+
+.letrachica
+{
+	font-size: 1.2sem;
+}
+
+.letramediana
+{
+	font-size: 1.5em;
+}
+
+.letragrande
+{
+	font-size: 3em;
+}
+
+.nito
+{
+	font-weight: bold;
+}
