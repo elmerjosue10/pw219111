@@ -1,0 +1,99 @@
+img[alt]
+{
+	border: 5px solid blue;
+}
+img[src="img/logo_tec.png"]
+{
+	width: 400px;
+}
+img[src^="img/"] /*busca al inicio de la cadena*/
+{
+	width: 150px;
+}
+img[src$="png"] /*busca al final de la cadena*/
+{
+	width: 250px;
+}
+img[src*="mg/"] /*funciona en cualquier parte de la cadena*/
+{
+	width: 300px;
+}
+/*Equivalente a: 
+.resaltado
+.ingles
+.archivo
+*/
+article[class~="resaltado"]
+{
+	border: 1px dashed blue;
+}
+article[class~="ingles"]
+{
+	border: 1px dashed blue;
+}
+article[class~="archivo"]
+{
+	border: 1px dashed blue;
+}
+
+article[class|="ingles"]
+{
+	text-align: center;
+}
+
+div > p{
+	color: blue;
+}
+
+div p
+{
+	color: red;
+}
+/*la primer p despues de h2*/
+h2 + p
+{
+	color: gray;
+}
+/*Todas las p seguidas de h2*/
+h2 ~ p
+{
+	color: green;
+}
+
+/*poner todas de color rojo mejor referencia*/
+#resumen,#experimento,#pruebas,#resultados,#conclusiones
+{
+	color: red;
+}
+section:not(#referencias)
+{
+	color: blue;
+}
+
+/*poner todos los elementos impares de la lista desordenada de color verde*/
+li:nth-child(odd) /*impar*/
+{
+	color: green;
+}
+
+/*poner todos los elementos pares de la lista desordenada de color azul*/
+li:nth-child(even) /*par*/
+{
+	color: blue;
+}
+
+li:nth-child(5) /*el child soporta numeros*/
+{
+	color: red;
+}
+
+li:nth-last-child(1) /*De abajo para arriba*/
+{
+	color: purple;
+}
+
+p:first-line
+{
+	color: red;
+	font-weight: bold;
+}
