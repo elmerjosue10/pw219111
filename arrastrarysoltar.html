@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>arrastrar y Soltar</title>
+</head>
+<body>
+	<h2>Arrastrar y Soltar</h2>
+	<div id="div1">
+		<img src="img/LOGO_TEC_PNG_OK (1).png" height="31" width="88" draggable="true"
+		ondragstart="drag(event)" id="arrastre1">
+		<img src="img/LOGO_TEC_PNG_OK (1).png" height="31" width="88" draggable="true"
+		ondragstart="drag(event)" id="arrastre2">
+		<img src="img/LOGO_TEC_PNG_OK (1).png" height="31" width="88" draggable="true"
+		ondragstart="drag(event)" id="arrastre3">
+		<img src="img/LOGO_TEC_PNG_OK (1).png" height="31" width="88" draggable="true"
+		ondragstart="drag(event)" id="arrastre4">
+	</div>
+	<div id="div2" ondragover="allowDrop(event)" ondrop="drop(event)">	
+	</div>
+	<script>
+		function drop(ev);
+		{
+			ev.preventDefault()
+			var data = ev.dataTransfer.getData("text");
+			ev.target.appenChild(document.getElementById(Data));
+		}
+		function allowDrop(ev)
+		{
+			//desactivamos el evento que rechaza el objeto
+			ev.preventDefault();
+		}
+		function drag(ev)
+		{
+			ev.dataTransfer.setdata("text",ev.target.id);
+		}
+	</script>
+</body>
+</html>
