@@ -3,12 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<title>arrastrar y Soltar</title>
+	<style>
+		#div1,#div2
+		{
+			float: left;
+			border: 1px solid black;
+			height: 170px;
+			margin: 10px;
+			padding: 10px;
+			width: 100px;
+		}
+	</style>
 </head>
 <body>
 	<h2>Arrastrar y Soltar</h2>
-	<div id="div1">
+	<div id="div1" ondragover="allowDrop(event)" ondrop="drop(event)">
 		<img src="img/LOGO_TEC_PNG_OK (1).png" height="31" width="88" draggable="true"
-		ondragstart="drag(event)" id="arrastre1">
+		ondragstart= "drag(event)" id="arrastre1">
 		<img src="img/LOGO_TEC_PNG_OK (1).png" height="31" width="88" draggable="true"
 		ondragstart="drag(event)" id="arrastre2">
 		<img src="img/LOGO_TEC_PNG_OK (1).png" height="31" width="88" draggable="true"
@@ -19,11 +30,11 @@
 	<div id="div2" ondragover="allowDrop(event)" ondrop="drop(event)">	
 	</div>
 	<script>
-		function drop(ev);
+		function drop(ev)
 		{
-			ev.preventDefault()
+			ev.preventDefault();
 			var data = ev.dataTransfer.getData("text");
-			ev.target.appenChild(document.getElementById(Data));
+			ev.target.appendChild(document.getElementById(data));
 		}
 		function allowDrop(ev)
 		{
@@ -32,7 +43,7 @@
 		}
 		function drag(ev)
 		{
-			ev.dataTransfer.setdata("text",ev.target.id);
+			ev.dataTransfer.setData("text",ev.target.id);
 		}
 	</script>
 </body>
