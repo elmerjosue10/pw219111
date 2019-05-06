@@ -1,0 +1,33 @@
+<%= console.log(data); %>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CRUD NODEJS My</title>
+</head>
+<body>
+	<table border align="center">
+		<thead>
+			<tr>
+				<th>No.</th>
+				<th>Nombre</th>
+				<th>Direccion</th>
+				<th>Telefono</th>
+				<th>Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% if(data) { %>
+				<% for(var i=0; i<data.length; i++) { %>
+					<tr>
+						<td><%= (i + 1) %></td>
+						<td><%= data[i].name %></td>
+						<td><%= data[i].address %></td>
+						<td><%= data[i].phone %></td>
+					</tr>
+				<% } %>
+			<% } %>
+		</tbody>
+	</table>
+</body>
+</html>
