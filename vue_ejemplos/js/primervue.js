@@ -10,8 +10,8 @@ const app = new Vue({
            {nombre:'mango', cantidad: 80}
 
 		],
-		nuevaFruta: ''
-		total = 0
+		nuevaFruta: '',
+		total: 0
 	},
 	methods: {
 		agregarFruta(){
@@ -20,7 +20,7 @@ const app = new Vue({
 			this.frutas2.push({
 				nombre: this.nuevaFruta,
 				cantidad: 0
-			});
+			})
 			this.nuevaFruta = '';
 		}
 	},
