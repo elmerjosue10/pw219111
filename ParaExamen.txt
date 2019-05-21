@@ -1,0 +1,109 @@
+JavaScript: Web - Interpretado
+	Si es un lenguaje de programación
+Para que sirve:
+	Interacción con el usuario
+	Manipulación DOM
+		Document Object Model
+Comparte con java:
+	Sintáxis
+	Punto y coma opcional
+	-----------------------------------
+
+Arrastrar : Drag
+soltar : Drop
+----------------------
+
+Notificaciones: JavaScript <--- http(s)
+	Configuración del navegador:
+	default <--- No autorizado, No denegado
+	granted <--- autorizado para notificaciones
+	denied  <--- no autorizado para notificaciones
+-----------------------------------------------------
+
+XAMPP
+X = SISTEMA OPERATIVO
+A = APACHE
+M = MYSQL (MARIADB)
+P = PHP
+p = PERL
+------------------------------------------------------
+
+Servidor Web = XAMPP
+
+CRUD = Create, Read, Update, Delete
+	MongoBD - MySQL
+ABCC = altas, bajas, cambios, consultas
+
+JS = Cliente
+Node.js = del lado del servidor - Chrome V8
+VERBOS = HTTP paquete = Express.js
+	get, put, post, delete
+Paquetes = Comunidad
+NPM = administrador de paquetes node
+-----------------------------------------------
+
+localshost -> middleware -[Servidor] ruta -> archivo --response-> ruta/
+-------------------------------------------------------------------------
+
+GRADIENTES:
+si no soporta gradientes este es el color que va a salir
+	background: red;
+	/*Opera*/
+	background: -o-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1),blue);
+	/*Safari*/
+	background: -webkit-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1),blue);
+	/*Firefox*/
+	background: -moz-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1),blue);
+	/*Microsoft - Edge*/
+	background: -ms-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1),blue);
+	/*Todos*/
+	background: linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1),blue);
+
+
+[repeating-linear-gradient]: La función CSS crea una imagen que consiste en repetir gradientes lineales. Es similar y toma los mismos argumentos, pero repite que el color se detiene infinitamente en todas las direcciones para cubrir todo su contenedor. 
+
+[linear-gradient]: crea una imágen la cual representa un degradado lineal de colores.
+---------------------------------------------------------------------------------
+Transformaciones
+transform:
+	translate(): recoloca un elemento en el eje horizontal y/o vertical.
+	rotate():  define una transformación que gira un elemento alrededor de un punto fijo en un plano 2D sin deformarlo.
+	scale(): define una transformación que modifica el tamaño de un elemento en el plano 2D.
+	skew(): define una transformación que sesga un elemento en el plano 2D.
+----------------------------------------------------------------------------------------------------------------------------
+Selectores Avanzados
+img[src^="img/"] /*busca al inicio de la cadena*/
+img[src$="png"] /*busca al final de la cadena*/
+img[src*="mg/"] /*funciona en cualquier parte de la cadena*/
+
+/*poner todas de color rojo menos referencia*/
+#resumen,#experimento,#pruebas,#resultados,#conclusiones
+{
+	color: red;
+}
+section:not(#referencias)
+{
+	color: blue;
+}
+
+/*poner todos los elementos impares de la lista desordenada de color verde*/
+li:nth-child(odd) /*impar*/
+{
+	color: green;
+}
+
+/*poner todos los elementos pares de la lista desordenada de color azul*/
+li:nth-child(even) /*par*/
+{
+	color: blue;
+}
+
+li:nth-child(5) /*el child soporta numeros*/
+{
+	color: red;
+}
+
+li:nth-last-child(1) /*De abajo para arriba*/
+{
+	color: purple;
+}
