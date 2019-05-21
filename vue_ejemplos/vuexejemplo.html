@@ -11,38 +11,65 @@
 		<titulo></titulo>
 	</div>
 
-
-
 	<script>
 		//Creamos componentes
 		Vue.component('titulo',{
 			template:
 			`
 				<div>
-					<h1>Numero: {{ $store.state.numero }}</h1>
+					<h1>Numero: {{ numero }}</h1>
 					<hijo></hijo>	
 				</div>	
-			`
+			`,
+			computed: {
+				...Vuex.mapState(['numero'])
+			}
 		});
 
 		Vue.component('hijo',{
 			template:
 			`
 				<div>
-				<h1>Numero: {{ $store.state.numero }}</h1>
-				<button @click="$store.commit('aumentar')"> + </button>
+				<h1>Numero: {{ numero }}</h1>
+				<button @click="aumentar"> + </button>
+				<button @click="disminuir(2)"> - </button>
+				<button @click="obtenerPersonas"> Personas </button>
+				<ul v-for="p of personas.results">
+					<li>{{ p.name.first }} {{ p.name.last }}</li>
+				</ul>
 				</div>
-			`
+			`,
+			computed: {
+				...Vuex.mapState(['numero','personas'])
+			},
+			methods:{
+				...Vuex.mapMutations(['aumentar','disminuir']),
+				...Vuex.mapActions(['obtenerPersonas'])
+			}
 		})
 
 		//creamos el store compartido
 		const store = new Vuex.Store({
 			state:{
-				numero: 10
+				numero: 10,
+				personas: []
 			},
 			mutations:{
 				aumentar(state){
 					state.numero++
+				},
+				disminuir(state,n){
+					state.numero -= n 
+				},
+				llenarPersonas(state,personasWeb){
+					state.personas = personasWeb
+				}
+			},
+			actions:{
+				obtenerPersonas: async function({ commit }){
+					 const data = await fetch('https://randomuser.me/api/?results=20');
+					 const personas = await data.json();
+					 commit('llenarPersonas',personas);
 				}
 			}
 		});	
